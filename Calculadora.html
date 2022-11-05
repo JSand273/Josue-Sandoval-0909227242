@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Josue Sandoval</title>
+</head>
+<style>
+    body {
+            background-color: rgb(30,144,255);
+        }
+</style>
+<body>
+    <form action="action">
+    <h1>Bienvenido a Hotel Dulces Sueños</h1>
+    <p>Las habitaciones disponibles son</p>
+    <ol>
+    Clásica = Q 150.00
+
+    Doble = Q 275.00
+
+    Suite = Q 450.00
+    </ol>
+    <p>¿Cual desea?</p>
+    <input type="button" value="Clasica" id="h1" value="150" onclick="formula()">
+    <input type="button" value="Doble" id="h2" value="275" onclick="formula2()">
+    <input type="button" value="Suite" id="h3" value="450" onclick="formula3()">
+    <p>Segun la habitacion que usted eligio se aplicaran algunas tarifas</p>
+    <ol>
+        IVA=12%
+        INGUAT=10%
+    </ol>
+    <label for="">IVA=12%:Q</label>
+    <input type="text" name="IVA" id="iva" value="">
+    <label for="">INGUAT=10%:Q</label>
+    <input type="text" name="INGUAT" id="ing" value="">
+    <label for="">Tarifa final:Q</label>
+    <input type="text" name="Tarifa final" id="tarifaF" value="">
+    <script>
+        function formula(){
+            var IVA=parseInt(document.getElementById('iva').value);
+            var INGUAT=parseInt(document.getElementById('ing').value);
+            var Tarifafinal=parseInt(document.getElementById('tarifaF').value);
+            var Habitacion1=parseInt(document.getElementById('h1').value); 
+            document.getElementById('iva').value=(150*1.2);
+            document.getElementById('ing').value=(150*1.0);
+            document.getElementById('tarifaF').value=(150*1.2*1.0);
+        }
+        function formula2(){
+            var IVA=parseInt(document.getElementById('iva').value);
+            var INGUAT=parseInt(document.getElementById('ing').value);
+            var Tarifafinal=parseInt(document.getElementById('tarifaF').value);
+            var Habitacion2=parseInt(document.getElementById('h2').value); 
+            document.getElementById('iva').value=(275*1.2);
+            document.getElementById('ing').value=(275*1.0);
+            document.getElementById('tarifaF').value=(275*1.2*1.0);
+        }
+        function formula3(){
+            var IVA=parseInt(document.getElementById('iva').value);
+            var INGUAT=parseInt(document.getElementById('ing').value);
+            var Tarifafinal=parseInt(document.getElementById('tarifaF').value);
+            var Habitacion3=parseInt(document.getElementById('h3').value); 
+            document.getElementById('iva').value=(450*1.2);
+            document.getElementById('ing').value=(450*1.0);
+            document.getElementById('tarifaF').value=(450*1.2*1.0);
+        }
+    </script>
+    </form>
+   <h3>Creado por Josue Sandoval 0909 22 7242</h3>
+    
+</body>
+</html>
